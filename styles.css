@@ -1,0 +1,298 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+lin
+#header {
+    /* margin: 0;
+    padding: 0;  */
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+    font-size: 100px 10px;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    padding: 20px 80px;
+      /* THis helps to separate the header with the body and make the header sticky */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+  
+}
+/* this is where i align my list in one raw */
+#navbar {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #081fee;
+}
+/* This part is responsible of making an active bar un our list whenever we want to select any among them */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Our home page containts */
+#Hero {
+    background-image: url("img/hero2.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#Hero h4 {
+    padding-bottom: 15px;
+}
+#Hero h1 {
+    color: #2707c3;
+}
+#Hero button{
+    background-image: url=("img/hero.jpg");
+    color:#360358;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* the arrangement of the features */
+/* #feture .fe-box {
+    width:180px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0; */
+
+/* #feture .fe-box:hover {
+    box-shadow: 10px 10px 24px rgba(70, 62, 221, 0.1);
+}
+#feture .fe-box img{
+    width: 10%;
+    margin-bottom: 10px;
+} */
+
+/* #feture .fe-box h6{
+    display: flex;
+    padding: 5px 2px 3px 5px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+} */
+/* The listing of the features */
+/* #feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: ; */
+/* } */
+
+/* #feture .fe-box:nth-child(2) h6 { 
+    background-color: #081fee;
+}
+#feture .fe-box:nth-child(3) h6 { 
+    background-color: #dc98f7;
+}
+#feture .fe-box:nth-child(4) h6 { 
+    background-color: #09defa;
+}
+#feture .fe-box:nth-child(5) h6 { 
+    background-color: #ee9208;
+}
+#feture .fe-box:nth-child(6) h6 { 
+    background-color: #fa7d7d;
+} */
+
+
+/* Alignment of our produucts */
+#product1 {
+    text-align: center;
+}
+#product1 .pro {
+    width: 23px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    
+}
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(255, 238, 3);
+}
+#product1 .pro .des h4 {
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #09defa;
+}
+/* the alignment in one raw of all the products */
+#product1 .pro-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    align-items: flex;
+    margin-top: 25px;
+}
+/* My new section with the image in or background color */
+
+#section-m1{
+    margin: 40px 0;
+}
+
+
+#banner{
+    cursor: pointer;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/nkunde.webp");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #1a150f;
+    font-size: 26px;
+    text-shadow: #0f0101;
+    animation:alternate-reverse;
+    animation-duration: 3s;
+    animation-composition: forwards;
+}
+#banner h2{
+    color: #040216;
+    font-size: 30px;
+    text-decoration-line:inherit;
+ }
+
+ button.normal {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #02000b;
+    background-color: #10a927;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner button:hover {
+    background: #10a927;
+    color: #f4d806;
+}
+
+ /* #logo {
+
+    margin: 0;
+    padding: 0;
+    font-size: 15/1.5; */
+
+
+h6{
+    font-size: 50px;
+    line-height: 64;
+    color: #222;
+}
+
+/* p {
+    font-size: 50px;
+    line-height: 64;
+    color: #222;
+} */
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* 
+.section-m1 {
+    padding: 40px 80px;
+} */
+
+/* 
+body {
+    width: ;
+} */
+
+/* #feature .fe-box {
+width: 100;
+text-align: center;
+padding: 25px 15px;
+box-shadow: 20px 20px 34px rgba(70, green, , 0.1);
+} */
+
+
+
+
+
+
+
+
+
