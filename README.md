@@ -1,4 +1,4 @@
-# Mye-commere
+# MyE-commere
 Welcome to our e-commerce platform, where we believe in providing the basic human needs of food and clothing. We understand that these needs are essential for survival, and that's why we have curated a collection of the finest quality products at affordable prices.
 
 From fresh produce to stylish clothing, we have everything you need to live a comfortable life. Our products are carefully sourced from trusted suppliers, ensuring that you get only the best. We believe that everyone deserves access to good quality food and clothing, and that's why we strive to make it accessible to all.
